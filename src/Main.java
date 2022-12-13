@@ -1,13 +1,15 @@
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
 
 
         int year = 1976;
-        int clientDeviceYear = 2015;
+        int currentYear = LocalDate.now().getYear();
         int clientOS = 1;
         int deliveryDistance = 15;
         verificationYear(year);
-        verificationOS(clientDeviceYear, clientOS);
+        verificationOS(currentYear, clientOS);
         calculateDistance(deliveryDistance);
 
 
